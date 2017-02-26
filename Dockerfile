@@ -12,7 +12,8 @@ RUN \
 	cd /srv && \
 	mkdir homeassistant && \
 	chown homeassistant:homeassistant homeassistant && \
-	pip3 install homeassistant
+	pip3 install homeassistant && \
+	hass --open-ui
 	
 
 # Expose default port
