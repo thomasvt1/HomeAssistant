@@ -8,10 +8,10 @@ MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the Redis server. 
 RUN \
-	sudo useradd -rm homeassistant && \
+	useradd -rm homeassistant && \
 	cd /srv && \
-	sudo mkdir homeassistant && \
-	sudo chown homeassistant:homeassistant homeassistant && \
+	mkdir homeassistant && \
+	chown homeassistant:homeassistant homeassistant && \
 	pip3 install homeassistant
 	
 
