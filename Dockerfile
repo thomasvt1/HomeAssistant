@@ -14,8 +14,7 @@ RUN \
 	groups homeassistant && \
 	chown homeassistant:homeassistant /srv/homeassistant && \
 	su -s /bin/bash homeassistant && \
-	virtualenv -p python3 /srv/homeassistant && \
-	source /srv/homeassistant/bin/activate && \
+
 	pip3 install --upgrade homeassistant && \
 	su -u homeassistant -H /srv/homeassistant/bin/hass
 	
