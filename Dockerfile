@@ -6,6 +6,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the Redis server. 
 RUN \
+	apt-get install -y python-virtualenv && \
 	addgroup homeassistant && \
 	adduser --system homeassistant && \
 	usermod -G homeassistant homeassistant &&\
