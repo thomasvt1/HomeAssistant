@@ -8,6 +8,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 RUN \
 	addgroup homeassistant && \
 	adduser --system homeassistant && \
+	usermod -G homeassistant homeassistant &&\
 	mkdir /srv/homeassistant && \
 	groups homeassistant && \
 	chown homeassistant:homeassistant /srv/homeassistant && \
