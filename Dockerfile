@@ -1,5 +1,5 @@
 # Set the base image
-FROM python:slim
+FROM python:3.5-slim
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
@@ -9,7 +9,7 @@ RUN \
 	apt-get update && apt-get install -y python-virtualenv && \
 	addgroup homeassistant && \
 	adduser --system homeassistant && \
-	usermod -G homeassistant homeassistant &&\
+	usermod -g homeassistant homeassistant &&\
 	mkdir /srv/homeassistant && \
 	groups homeassistant && \
 	chown homeassistant:homeassistant /srv/homeassistant && \
