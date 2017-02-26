@@ -12,9 +12,10 @@ RUN \
 	cd /srv && \
 	mkdir homeassistant && \
 	chown homeassistant:homeassistant homeassistant && \
-	pip3 install homeassistant && \
-	hass --open-ui
+	pip3 install homeassistant
 	
 
 # Expose default port
 EXPOSE 8123 8123
+
+CMD ["hass --daemon"]
