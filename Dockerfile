@@ -6,7 +6,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the Redis server. 
 RUN \
-	adduser --system homeassistant && \
+	adduser --system -G homeassistant homeassistant && \
 	mkdir /srv/homeassistant && \
 	groups homeassistant && \
 	chown homeassistant:homeassistant /srv/homeassistant && \
