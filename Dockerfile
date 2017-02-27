@@ -7,7 +7,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 # Update application repository list and install the Redis server. 
 RUN \
 	apk add --update build-base && \
-	useradd homeassistant && \
+	adduser -S homeassistant && \
 	usermod -g homeassistant homeassistant &&\
 	
 	mkdir /srv/homeassistant && \
