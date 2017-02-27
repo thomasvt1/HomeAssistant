@@ -16,6 +16,10 @@ RUN \
 
 	pip3 install --upgrade homeassistant && \
 	
+	ls /srv/homeassistant/bin/ &&\
+	
+	ls /home/homeassistant
+	
 
 # Expose default port
 EXPOSE 8123 8123
