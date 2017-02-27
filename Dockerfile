@@ -12,11 +12,6 @@ RUN \
 	pip3 install netdisco==0.8.3 && \
 	pip3 install --upgrade homeassistant && \
 	
-	ls /srv/homeassistant &&\
-	
-	ls /home/homeassistant
-	
-
 # Expose default port
 EXPOSE 8123 8123
 
