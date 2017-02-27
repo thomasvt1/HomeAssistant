@@ -15,4 +15,4 @@ RUN \
 # Expose default port
 EXPOSE 8123 8123
 
-CMD ["hass"]
+CMD ["hass --config /config"]
