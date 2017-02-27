@@ -10,6 +10,7 @@ RUN \
 	adduser -S homeassistant && \
 	
 	pip3 install netdisco==0.8.3 && \
+	pip3 install pywebpush==0.6.1 && \
 	pip3 install --upgrade homeassistant
 	
 # Expose default port
