@@ -8,7 +8,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 RUN \
 	apk add --update build-base && \
 	addgroup homeassistant && \
-	adduser --system homeassistant && \
+	adduser homeassistant && \
 	usermod -g homeassistant homeassistant &&\
 	
 	mkdir /srv/homeassistant && \
