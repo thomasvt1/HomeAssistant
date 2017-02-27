@@ -13,7 +13,7 @@ RUN \
 	mkdir /srv/homeassistant && \
 	groups homeassistant && \
 	chown homeassistant:homeassistant /srv/homeassistant && \
-
+	pip3 install netdisco==0.8.3 && \
 	pip3 install --upgrade homeassistant && \
 	
 	ls /srv/homeassistant &&\
