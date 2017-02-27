@@ -1,11 +1,12 @@
 # Set the base image
-FROM python:3.5-slim
+FROM python:3.5-alpine
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the Redis server. 
 RUN \
+	apk add --update build-base && \
 	addgroup homeassistant && \
 	adduser --system homeassistant && \
 	usermod -g homeassistant homeassistant &&\
