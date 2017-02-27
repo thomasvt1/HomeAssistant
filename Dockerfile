@@ -24,4 +24,4 @@ RUN \
 # Expose default port
 EXPOSE 8123 8123
 
-CMD ["./srv/homeassistant/bin/hass"]
+CMD ["hass"]
