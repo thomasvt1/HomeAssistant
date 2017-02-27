@@ -16,7 +16,7 @@ RUN \
 
 	pip3 install --upgrade homeassistant && \
 	
-	ls /srv/homeassistant/bin/ &&\
+	ls /srv/homeassistant &&\
 	
 	ls /home/homeassistant
 	
