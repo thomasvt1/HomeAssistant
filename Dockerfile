@@ -13,7 +13,7 @@ RUN \
 	pip3 install pywebpush==0.6.1 && \
 	pip3 install fuzzywuzzy==0.15.0 && \
 	pip3 install jsonrpc-async==0.4 && \
-	pip3 install jsonrpc-websocket==0.2 && \
+	pip3 install jsonrpc-websocket==0.5 && \
 	pip3 install gTTs-token==1.1.1 && \
 	
 	pip3 install --upgrade homeassistant
