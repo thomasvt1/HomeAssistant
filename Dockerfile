@@ -6,7 +6,7 @@ MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the Redis server. 
 RUN \
-	apk add --update linux-headers gcc build-base libffi-dev openssl-dev && \
+	apk add --update linux-headers gcc build-base libffi-dev openssl-dev ffmpeg && \
 	adduser -S homeassistant && \
 	
 	pip3 install netdisco==1.0.0rc3 && \
