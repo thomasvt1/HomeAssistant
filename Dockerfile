@@ -12,19 +12,19 @@ RUN \
 	pip3 install netdisco && \
 	pip3 install pywebpush && \
 	pip3 install fuzzywuzzy && \
-	pip3 install jsonrpc-async==0.6 && \
-	pip3 install jsonrpc-websocket==0.5 && \
-	pip3 install gTTs-token==1.1.1 && \
-	pip3 install paho-mqtt==1.3.0 && \
-	pip3 install aiohttp_cors==0.5.3 && \
-	pip3 install zeroconf==0.19.1 && \
-	pip3 install astral==1.4 && \
-	pip3 install mutagen==1.38 && \
-	pip3 install distro==1.0.4 && \
-	pip3 install pyfttt==0.3 && \
-	pip3 install PyJWT==1.5.0 && \
-	pip3 install denonavr==0.5.2 && \
-	pip3 install plexapi==2.0.2 && \
+	pip3 install jsonrpc-async && \
+	pip3 install jsonrpc-websocket && \
+	pip3 install gTTs-token && \
+	pip3 install paho-mqtt && \
+	pip3 install aiohttp_cors && \
+	pip3 install zeroconf && \
+	pip3 install astral && \
+	pip3 install mutagen && \
+	pip3 install distro && \
+	pip3 install pyfttt && \
+	pip3 install PyJWT && \
+	pip3 install denonavr && \
+	pip3 install plexapi && \
 	
 	pip3 install --upgrade homeassistant
 	
