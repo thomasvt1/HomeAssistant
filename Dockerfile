@@ -9,9 +9,9 @@ RUN \
 	apk add --update linux-headers gcc build-base libffi-dev openssl-dev ffmpeg nmap && \
 	adduser -S homeassistant && \
 	
-	pip3 install netdisco==1.0.1 && \
-	pip3 install pywebpush==1.0.5 && \
-	pip3 install fuzzywuzzy==0.15.0 && \
+	pip3 install netdisco && \
+	pip3 install pywebpush && \
+	pip3 install fuzzywuzzy && \
 	pip3 install jsonrpc-async==0.6 && \
 	pip3 install jsonrpc-websocket==0.5 && \
 	pip3 install gTTs-token==1.1.1 && \
