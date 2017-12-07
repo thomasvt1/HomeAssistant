@@ -25,6 +25,7 @@ RUN \
 	pip3 install PyJWT && \
 	pip3 install denonavr && \
 	pip3 install plexapi && \
+	pip3 install PyXiaomiGateway &&\
 	
 	pip3 install --upgrade homeassistant
 	
