@@ -10,7 +10,6 @@ RUN \
 	adduser -S homeassistant && \
 	
 	pip3 install jsonrpc-websocket && \
-	pip3 install PyXiaomiGateway && \
 	pip3 install async_timeout && \
 	pip3 install jsonrpc-async && \
 	pip3 install aiohttp_cors && \
@@ -20,11 +19,9 @@ RUN \
 	pip3 install voluptuous &&\
 	pip3 install paho-mqtt && \
 	pip3 install pywebpush && \
-	pip3 install denonavr && \
 	pip3 install zeroconf && \
 	pip3 install requests && \
 	pip3 install netdisco && \
-	pip3 install plexapi && \
 	pip3 install mutagen && \
 	pip3 install aiohttp && \
 	pip3 install chardet && \
