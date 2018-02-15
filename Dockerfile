@@ -13,6 +13,7 @@ RUN \
 	pip3 install jsonrpc-async && \
 	pip3 install aiohttp_cors && \
 	pip3 install python-miio && \
+	pip3 install mysqlclient && \
 	pip3 install fuzzywuzzy && \
 	pip3 install gTTs-token && \
 	pip3 install voluptuous &&\
