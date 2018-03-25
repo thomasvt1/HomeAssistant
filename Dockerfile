@@ -37,7 +37,7 @@ RUN \
 	pip3 install pytz && \
 	
 	
-	pip3 install --upgrade homeassistant
+	pip3 install --upgrade git+git://github.com/home-assistant/home-assistant.git@dev
 	
 # Expose default port
 EXPOSE 8123 8123
