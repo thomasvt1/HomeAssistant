@@ -4,17 +4,13 @@ FROM alpine:latest
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
 
-RUN apk add --update --no-cache python3 && \
-    find / -type d -name __pycache__ -exec rm -r {} +   && \
-    rm -r /usr/lib/python*/ensurepip                    && \
-    rm -r /usr/lib/python*/lib2to3                      && \
-    rm -r /usr/lib/python*/turtledemo                   && \
-    rm -r /usr/lib/python*/idlelib                      && \
-    rm /usr/lib/python*/turtle.py                       && \
-    rm /usr/lib/python*/webbrowser.py                   && \
-    rm /usr/lib/python*/doctest.py                      && \
-    rm /usr/lib/python*/pydoc.py                        && \
-    rm -rf /root/.cache /var/cache /usr/share/terminfo
+RUN apk add --no-cache python3 && \
+    python3 -m ensurepip && \
+    rm -r /usr/lib/python*/ensurepip && \
+    pip3 install --upgrade pip setuptools && \
+    if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
+    if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
+    rm -r /root/.cache
 
 # Update application repository list and install the Redis server. 
 RUN \
