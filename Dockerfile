@@ -1,12 +1,20 @@
 # Set the base image
-FROM python:3.6-alpine
+FROM lsiobase/alpine
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
 
+RUN apk add --no-cache python3-dev && \
+    python3 -m ensurepip && \
+    rm -r /usr/lib/python*/ensurepip && \
+    pip3 install --upgrade pip setuptools && \
+    if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
+    if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
+    rm -r /root/.cache
+
 # Update application repository list and install the Redis server. 
 RUN \
-	apk add --update linux-headers gcc build-base libffi-dev openssl-dev ffmpeg nmap libssl1.0 autoconf mariadb-dev && \
+	apk add --update linux-headers gcc build-base libffi-dev ffmpeg libssl1.0 autoconf mariadb-dev && \
 	
 	pip3 install jsonrpc-websocket && \
 	pip3 install async_timeout && \
@@ -28,8 +36,7 @@ RUN \
 	pip3 install jinja2 && \
 	pip3 install pyyaml && \
 	pip3 install typing && \
-	pip3 install astral && \	
-	pip3 install pyfttt && \
+	pip3 install astral && \
 	pip3 install distro && \
 	pip3 install PyJWT && \
 	pip3 install pytz && \
@@ -40,6 +47,6 @@ RUN \
 	pip3 install --pre --upgrade homeassistant
 	
 # Expose default port
-EXPOSE 8123 8123
+EXPOSE 8123
 
 CMD ["hass"]
