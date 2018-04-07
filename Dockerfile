@@ -1,5 +1,5 @@
 # Set the base image
-FROM alpine:latest
+FROM lsiobase/alpine
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
@@ -36,8 +36,7 @@ RUN \
 	pip3 install jinja2 && \
 	pip3 install pyyaml && \
 	pip3 install typing && \
-	pip3 install astral && \	
-	pip3 install pyfttt && \
+	pip3 install astral && \
 	pip3 install distro && \
 	pip3 install PyJWT && \
 	pip3 install pytz && \
