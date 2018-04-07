@@ -1,5 +1,5 @@
 # Set the base image
-FROM python:3.6-alpine
+FROM lsiobase/alpine.python
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
