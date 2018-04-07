@@ -1,5 +1,5 @@
 # Set the base image
-FROM lsiobase/alpine.python
+FROM lsiobase/alpine.python3
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
@@ -8,36 +8,36 @@ MAINTAINER Thomas <thomasvt@me.com>
 RUN \
 	apk add --update linux-headers gcc build-base libffi-dev ffmpeg nmap libssl1.0 autoconf mariadb-dev && \
 	
-	pip install jsonrpc-websocket && \
-	pip install async_timeout && \
-	pip install jsonrpc-async && \
-	pip install aiohttp_cors && \
-	pip install python-miio && \
-	pip install mysqlclient && \
-	pip install fuzzywuzzy && \
-	pip install gTTs-token && \
-	pip install voluptuous &&\
-	pip install paho-mqtt && \
-	pip install pywebpush && \
-	pip install zeroconf && \
-	pip install requests && \
-	pip install netdisco && \
-	pip install mutagen && \
-	pip install aiohttp && \
-	pip install chardet && \
-	pip install jinja2 && \
-	pip install pyyaml && \
-	pip install typing && \
-	pip install astral && \	
-	pip install pyfttt && \
-	pip install distro && \
-	pip install PyJWT && \
-	pip install pytz && \
-	pip install yarl && \
-	pip install pytz && \
+	pip3 install jsonrpc-websocket && \
+	pip3 install async_timeout && \
+	pip3 install jsonrpc-async && \
+	pip3 install aiohttp_cors && \
+	pip3 install python-miio && \
+	pip3 install mysqlclient && \
+	pip3 install fuzzywuzzy && \
+	pip3 install gTTs-token && \
+	pip3 install voluptuous &&\
+	pip3 install paho-mqtt && \
+	pip3 install pywebpush && \
+	pip3 install zeroconf && \
+	pip3 install requests && \
+	pip3 install netdisco && \
+	pip3 install mutagen && \
+	pip3 install aiohttp && \
+	pip3 install chardet && \
+	pip3 install jinja2 && \
+	pip3 install pyyaml && \
+	pip3 install typing && \
+	pip3 install astral && \	
+	pip3 install pyfttt && \
+	pip3 install distro && \
+	pip3 install PyJWT && \
+	pip3 install pytz && \
+	pip3 install yarl && \
+	pip3 install pytz && \
 	
 	
-	pip install --upgrade homeassistant
+	pip3 install --upgrade homeassistant
 	
 # Expose default port
 EXPOSE 8123 8123
