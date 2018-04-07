@@ -14,7 +14,7 @@ RUN apk add --no-cache python3-dev && \
 
 # Update application repository list and install the Redis server. 
 RUN \
-	apk add --update linux-headers gcc build-base libffi-dev ffmpeg nmap libssl1.0 autoconf mariadb-dev && \
+	apk add --update linux-headers gcc build-base libffi-dev ffmpeg libssl1.0 autoconf mariadb-dev && \
 	
 	pip3 install jsonrpc-websocket && \
 	pip3 install async_timeout && \
@@ -47,6 +47,6 @@ RUN \
 	pip3 install --upgrade homeassistant
 	
 # Expose default port
-EXPOSE 8123 8123
+EXPOSE 8123
 
 CMD ["hass"]
