@@ -14,8 +14,9 @@ RUN apk add --no-cache python3-dev && \
 
 # Update application repository list and install the Redis server. 
 RUN \
-	apk add --update linux-headers gcc build-base libffi-dev ffmpeg libssl1.0 autoconf mariadb-dev && \
+	apk add --update linux-headers gcc build-base libffi-dev ffmpeg libssl1.0 autoconf mariadb-dev
 	
+RUN \
 	pip3 install jsonrpc-websocket && \
 	pip3 install async_timeout && \
 	pip3 install jsonrpc-async && \
