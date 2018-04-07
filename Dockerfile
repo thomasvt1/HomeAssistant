@@ -5,7 +5,7 @@ FROM lsiobase/alpine
 MAINTAINER Thomas <thomasvt@me.com>
 
 # Update application repository list and install the HASS server. 
-RUN apk add --no-cache git python3 ca-certificates libffi-dev libssl1.0 && \
+RUN apk add --no-cache git python3 ca-certificates libffi-dev libssl1.0 libressl-dev && \
     pip3 install --upgrade --no-cache-dir pip && \
     apk add --no-cache --virtual=build-dependencies build-base linux-headers python3-dev tzdata && \
     pip3 install --no-cache-dir homeassistant && \
