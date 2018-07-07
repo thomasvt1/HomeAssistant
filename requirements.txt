@@ -1,0 +1,6 @@
+home-assistant-frontend
+sqlalchemy
+python-miio
+HAP-python==1.1.7
+PyXiaomiGateway
+distro==1.2.0
