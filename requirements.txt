@@ -44,5 +44,8 @@ jsonrpc-async==0.6
 # homeassistant.components.media_player.kodi
 jsonrpc-websocket==0.6
 
+# homeassistant.components.notify.html5
+pywebpush==1.6.0
+
 # homeassistant.components.cast
 pychromecast==2.1.0
