@@ -51,4 +51,4 @@ pywebpush==1.6.0
 pychromecast==2.1.0
 
 # homeassistant.components.light.yeelight
-yeelight==0.4.0
+#yeelight==0.4.0
