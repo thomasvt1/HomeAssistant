@@ -56,4 +56,4 @@ pychromecast==2.1.0
 #yeelight==0.4.0
 
 # homeassistant.components.zeroconf
-zeroconf==0.20.0	zeroconf==0.21.0
+zeroconf==0.21.0
