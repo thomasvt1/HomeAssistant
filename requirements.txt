@@ -13,6 +13,8 @@ pyyaml>=3.13,<4
 requests==2.19.1
 voluptuous==0.11.5
 
+mysqlclient
+
 # homeassistant.components.frontend
 home-assistant-frontend
 
