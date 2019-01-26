@@ -57,4 +57,3 @@ pychromecast==2.1.0
 
 # homeassistant.components.zeroconf
 zeroconf==0.21.3
-netifaces==0.10.7
