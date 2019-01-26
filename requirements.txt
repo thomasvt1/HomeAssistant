@@ -26,7 +26,7 @@ home-assistant-frontend
 python-miio==0.4.4
 
 # homeassistant.components.homekit
-HAP-python==2.4.1
+HAP-python==2.4.2
 
 # homeassistant.components.xiaomi_aqara
 PyXiaomiGateway==0.11.1
