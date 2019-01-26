@@ -35,7 +35,7 @@ PyXiaomiGateway==0.11.1
 aiohttp_cors==0.7.0
 
 # homeassistant.components.media_player.gpmdp
-websocket-client==0.37.0
+websocket-client==0.54.0
 
 # homeassistant.components.mqtt
 paho-mqtt==1.4.0
