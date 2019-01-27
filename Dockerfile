@@ -1,5 +1,5 @@
 # Set the base image
-FROM lsiobase/alpine
+FROM alpine:3.8
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
