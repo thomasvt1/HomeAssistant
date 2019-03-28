@@ -17,7 +17,11 @@ ruamel.yaml==0.15.89
 voluptuous==0.11.5
 voluptuous-serialize==2.1.0
 
+#MySQL
 mysqlclient
+
+# MariaDB
+pymysql
 
 # homeassistant.components.frontend
 home-assistant-frontend
