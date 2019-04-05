@@ -45,10 +45,10 @@ jsonrpc-async==0.6
 jsonrpc-websocket==0.6
 
 # homeassistant.components.notify.html5
-pywebpush==1.6.0
+pywebpush==1.9.2
 
 # homeassistant.components.cast
-pychromecast==3.0.0
+pychromecast==3.2.0
 
 # homeassistant.components.zeroconf
 zeroconf==0.21.3
