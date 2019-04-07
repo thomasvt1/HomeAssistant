@@ -52,3 +52,6 @@ pychromecast==3.2.0
 
 # homeassistant.components.zeroconf
 zeroconf==0.21.3
+
+# homeassistant.components.otp
+pyotp==2.2.6
