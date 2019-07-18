@@ -10,7 +10,7 @@ ADD https://raw.githubusercontent.com/thomasvt1/HomeAssistant/requirements/requi
 RUN apk add --no-cache git mariadb-connector-c-dev python3 ca-certificates libffi-dev libssl1.0 libressl-dev && \
     pip3 install --upgrade --no-cache-dir pip && \
     apk add --no-cache --virtual=build-dependencies build-base linux-headers python3-dev tzdata mariadb-dev && \
-    pip3 install --no-cache-dir --no-use-pep517 --pre homeassistant && \
+    pip3 install --no-cache-dir --pre homeassistant && \
     pip3 install --no-cache-dir --no-use-pep517 -r requirements.txt && \
     apk del build-dependencies && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
