@@ -29,7 +29,7 @@ pymysql
 home-assistant-frontend
 
 # homeassistant.components.homekit
-HAP-python==2.5.0
+HAP-python==2.6.0
 
 # homeassistant.components.http
 aiohttp_cors==0.7.0
@@ -50,7 +50,7 @@ jsonrpc-websocket==0.6
 pywebpush==1.9.2
 
 # homeassistant.components.cast
-pychromecast==3.2.2
+pychromecast==4.0.1
 
 # homeassistant.components.zeroconf
 zeroconf==0.23
