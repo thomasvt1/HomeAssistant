@@ -11,7 +11,7 @@ RUN apk add --no-cache git mariadb-connector-c-dev python3 ca-certificates libff
     pip3 install --upgrade --no-cache-dir pip && \
     apk add --no-cache --virtual=build-dependencies build-base linux-headers python3-dev tzdata && \
     pip3 install --no-cache-dir homeassistant && \
-    pip3 install --no-cache-dir --no-use-pep517 -r requirements.txt && \
+    pip3 install --no-cache-dir -r requirements.txt && \
     apk del build-dependencies && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 
