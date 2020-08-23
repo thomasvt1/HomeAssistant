@@ -5,6 +5,9 @@ FROM lsiobase/alpine:3.10
 MAINTAINER Thomas <thomasvt@me.com>
 
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/master/requirements_all.txt /
+ADD https://raw.githubusercontent.com/home-assistant/core/dev/homeassistant/package_constraints.txt homeassistant/
+
+RUN ls
 
 # Update application repository list and install the HASS server. 
 RUN apk add --no-cache ffmpeg-dev git mariadb-connector-c-dev python3 autoconf nmap ca-certificates glib-dev libffi-dev jpeg-dev eudev-dev zlib-dev py3-lxml libssl1.1 libressl-dev && \
