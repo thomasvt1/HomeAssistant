@@ -4,7 +4,7 @@ FROM lsiobase/alpine:3.10
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
 
-ADD https://raw.githubusercontent.com/home-assistant/core/dev/requirements.txt /
+ADD https://raw.githubusercontent.com/home-assistant/core/master/requirements.txt /
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/master/requirements_all.txt /
 ADD https://raw.githubusercontent.com/home-assistant/core/dev/homeassistant/package_constraints.txt homeassistant/
 
