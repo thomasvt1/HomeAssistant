@@ -5,7 +5,7 @@ FROM lsiobase/alpine:3.13
 MAINTAINER Thomas <thomasvt@me.com>
 
 ADD https://raw.githubusercontent.com/home-assistant/core/master/requirements.txt /
-ADD https://raw.githubusercontent.com/home-assistant/home-assistant/master/requirements_all.txt /
+ADD https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt /
 ADD https://raw.githubusercontent.com/home-assistant/core/master/homeassistant/package_constraints.txt homeassistant/
 
 # Update application repository list and install the HASS server. 
