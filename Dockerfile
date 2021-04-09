@@ -1,10 +1,11 @@
 # Set the base image
-FROM alpine:3.12
+FROM alpine:3.13
 
 # Dockerfile author / maintainer 
 MAINTAINER Thomas <thomasvt@me.com>
 
-ADD https://raw.githubusercontent.com/thomasvt1/HomeAssistant/requirements/requirements.txt /
+ADD https://raw.githubusercontent.com/home-assistant/core/master/requirements.txt /
+ADD https://raw.githubusercontent.com/home-assistant/core/master/homeassistant/package_constraints.txt homeassistant/
 
 # Update application repository list and install the HASS server. 
 RUN apk add --no-cache git mariadb-connector-c-dev python3 py3-pip ca-certificates libffi-dev libssl1.1 libressl-dev && \
